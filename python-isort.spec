@@ -8,7 +8,7 @@
 Summary:	Python utility / library to sort imports alphabetically
 Name:		python-%{module}
 Version:	4.2.15
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/i/%{module}/%{module}-%{version}.tar.gz
