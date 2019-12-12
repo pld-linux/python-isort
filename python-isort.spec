@@ -9,7 +9,7 @@ Summary:	Python 2 library to sort imports alphabetically
 Summary(pl.UTF-8):	Narzędzie Pythona 2 do alfabetycznego sortowania listy importów
 Name:		python-%{module}
 Version:	4.3.21
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/isort/
