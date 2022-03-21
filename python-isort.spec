@@ -8,6 +8,7 @@
 Summary:	Python 2 library to sort imports alphabetically
 Summary(pl.UTF-8):	Narzędzie Pythona 2 do alfabetycznego sortowania listy importów
 Name:		python-%{module}
+# keep 4.x here for python2 support
 Version:	4.3.21
 Release:	5
 License:	MIT
@@ -122,6 +123,7 @@ Ten pakiet zawiera narzędzie wiersza poleceń.
 %py_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python} -m pytest test_isort.py
 %endif
 %endif
@@ -130,6 +132,7 @@ Ten pakiet zawiera narzędzie wiersza poleceń.
 %py3_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 %{__python3} -m pytest test_isort.py
 %endif
 %endif
